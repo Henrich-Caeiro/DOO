@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.controller.Cliente.VisualizarClienteController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="42.0" prefHeight="116.0" prefWidth="681.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="42.0">
+         <children>
+            <Label layoutX="-2.0" layoutY="28.0" text="Nome" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="28.0" />
+            <Label text="CPF" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="77.0" />
+            <Label layoutX="231.0" layoutY="77.0" text="Telefone" AnchorPane.rightAnchor="404.0" AnchorPane.topAnchor="77.0" />
+            <Label layoutX="576.0" layoutY="28.0" text="Idade" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="28.0" />
+            <Label layoutX="253.0" layoutY="28.0" text="Sexo" AnchorPane.rightAnchor="414.0" AnchorPane.topAnchor="28.0" />
+            <TextField fx:id="txtfNome" editable="false" layoutX="41.0" layoutY="24.0" promptText="Nome" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="503.0" AnchorPane.topAnchor="24.0" />
+            <TextField fx:id="txtfCpf" editable="false" layoutX="41.0" layoutY="73.0" promptText="CPF" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="503.0" AnchorPane.topAnchor="73.0" />
+            <TextField fx:id="txtfTelefone" editable="false" layoutX="292.0" layoutY="73.0" promptText="Telefone" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="73.0" />
+            <TextField fx:id="txtfIdade" editable="false" layoutX="532.0" layoutY="24.0" promptText="Idade" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0" />
+            <ChoiceBox fx:id="choiceSexo" disable="true" layoutX="303.0" layoutY="24.0" prefWidth="150.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="24.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="42.0" prefWidth="770.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <Button fx:id="btnVoltar" mnemonicParsing="false" onAction="#backwards" text="Voltar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+            <Button fx:id="btnEditar" disable="true" mnemonicParsing="false" onAction="#edit" text="Editar" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tablePet" layoutX="250.0" layoutY="207.0" prefHeight="378.0" prefWidth="306.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="244.0" AnchorPane.topAnchor="207.0">
+        <columns>
+          <TableColumn fx:id="columnNome" maxWidth="264.0" prefWidth="154.0" text="Nome" />
+          <TableColumn fx:id="columnRaca" maxWidth="264.0" prefWidth="151.0" text="Raça" />
+        </columns>
+      </TableView>
+      <Label layoutX="392.0" layoutY="181.0" text="Pets" AnchorPane.topAnchor="181.0" />
+      <Button fx:id="btnIniciaEdicao" layoutX="673.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleEditionButton" text="Iniciar Edição" textAlignment="RIGHT" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <AnchorPane layoutX="565.0" layoutY="207.0" prefHeight="306.0" prefWidth="197.0" AnchorPane.bottomAnchor="87.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="207.0">
+         <children>
+            <Button fx:id="btnVisualizar" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#viewPet" text="Visualizar Pet" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="btnAdicionarPet" layoutX="15.0" layoutY="68.0" mnemonicParsing="false" onAction="#addPet" text="Pet +" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="50.0" />
+            <Button fx:id="btnRemover" layoutX="16.0" layoutY="128.0" mnemonicParsing="false" onAction="#removePet" text="Pet -" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="100.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

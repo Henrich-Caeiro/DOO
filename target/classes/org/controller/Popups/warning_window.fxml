@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="194.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.controller.Popups.WarningController">
+   <children>
+      <Button fx:id="btnOk" layoutX="53.0" layoutY="507.0" mnemonicParsing="false" onAction="#confirm" prefHeight="35.0" prefWidth="66.0" text="Ok" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Text fx:id="txtMessage" layoutX="15.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Texto de exemplo" textAlignment="CENTER" wrappingWidth="632.13671875" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.controller.Menu.HomeScreenController">
+   <children>
+      <Button fx:id="btnGerenciarClientes" layoutX="287.0" layoutY="74.0" mnemonicParsing="false" onAction="#gerenciarClientes" prefHeight="93.0" prefWidth="227.0" text="Gerenciar Clientes" AnchorPane.leftAnchor="287.0" AnchorPane.rightAnchor="286.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGerenciarFuncionarios" layoutX="287.0" layoutY="394.0" mnemonicParsing="false" onAction="#gerenciarFuncionarios" prefHeight="93.0" prefWidth="227.0" text="Gerenciar Funcionários" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="287.0" AnchorPane.rightAnchor="286.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGerenciarEstoque" layoutX="428.0" layoutY="253.0" mnemonicParsing="false" onAction="#gerenciarEstoque" prefHeight="77.0" prefWidth="172.0" text="Gerenciar Estoque">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVerServicos" layoutX="201.0" layoutY="253.0" mnemonicParsing="false" onAction="#verServicos" prefHeight="77.0" prefWidth="172.0" text="Ver Serviços">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSair" layoutX="53.0" layoutY="507.0" mnemonicParsing="false" onAction="#sair" text="Sair" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,149 @@
+{
+  "servicos": [
+    {
+        "produtos": [
+            {
+                "nome": "BANHO",
+                "preco": 20.30
+            },
+            {
+                "nome": "TOSA",
+                "preco": 15.27
+            },
+            {
+                "nome": "SHAMPOO",
+                "preco": 11.00
+            }
+        ],
+        "valor_total": 0,
+        "cliente": "12345678900",
+        "funcionarios":[
+            "11122233300",
+            "44455566600"
+        ],
+        "data": "22/06/2024",
+        "finalizado": true
+    }
+  ],
+  "estoque": [
+    {
+        "nome": "BANHO",
+        "preco": 20.30,
+        "quantidade": 0
+    },
+    {
+        "nome": "TOSA",
+        "preco": 15.27,
+        "quantidade": 0
+    },
+    {
+        "nome": "SHAMPOO",
+        "preco": 11.00,
+        "quantidade": 35
+    }
+  ],
+  "funcionarios": [
+    {
+        "idade": 70,
+        "telefone": "12345678900",
+        "cpf": "44455566601",
+        "nome": "João",
+        "sexo": "Masculino",
+        "funcao": "GERENTE",
+        "dia_trabalho": [
+            "SEGUNDA",
+            "TERCA",
+            "QUARTA",
+            "QUINTA",
+            "SEXTA"
+        ],
+        "carga_trabalho": [
+            "2 GRANDE",
+            "1 MEDIO"
+        ]
+    },
+    {
+        "idade": 21,
+        "telefone": "11122233300",
+        "cpf": "12345678902",
+        "nome": "Ana",
+        "sexo": "Feminino",
+        "funcao": "FUNCIONARIO",
+        "dia_trabalho": [
+            "TERCA",
+            "QUARTA",
+            "QUINTA",
+            "SEXTA",
+            "SABADO"
+        ],
+        "carga_trabalho": [
+            "4 GRANDE",
+            "3 MEDIO",
+            "1 PEQUENO"
+        ]
+    }
+  ],
+  "clientes": [
+    {
+      "pets": [
+        {
+          "idade": 1,
+          "observacoes": {
+            "hiperativo": "Cachorro se move muito quando está secando."
+          },
+          "raca": "GOLDEN_RETRIEVER",
+          "responsaveis": [],
+          "nome": "Rex",
+          "porte": "GRANDE"
+        },
+        {
+          "idade": 7,
+          "observacoes": {},
+          "raca": "VIRA_LATA",
+          "responsaveis": [],
+          "nome": "Lindsey",
+          "porte": "MEDIO"
+        }
+      ],
+      "idade": 70,
+      "telefone": "12345678900",
+      "cpf": "12345678901",
+      "nome": "João",
+      "sexo": "Masculino"
+    },
+    {
+      "pets": [
+        {
+          "idade": 4,
+          "observacoes": { "visão": "Cachorro tem visão limitada." },
+          "raca": "POODLE",
+          "responsaveis": [],
+          "nome": "Pitucha",
+          "porte": "PEQUENO"
+        }
+      ],
+      "idade": 21,
+      "telefone": "12345678900",
+      "cpf": "12345678902",
+      "nome": "Maria",
+      "sexo": "Feminino"
+    },
+    {
+      "pets": [
+        {
+          "idade": 8,
+          "observacoes": {},
+          "raca": "BULLDOG",
+          "responsaveis": [],
+          "nome": "Cachorro",
+          "porte": "MEDIO"
+        }
+      ],
+      "idade": 27,
+      "telefone": "12445678900",
+      "cpf": "12345678903",
+      "nome": "Teste",
+      "sexo": "Masculino"
+    }
+  ]
+}

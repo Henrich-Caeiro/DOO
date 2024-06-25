@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.controller.Funcionario.VisualizarFuncionarioController">
+    <children>
+        <Label text="Nome:" layoutX="14.0" layoutY="14.0" />
+        <TextField fx:id="txtfNome" layoutX="100.0" layoutY="10.0" />
+
+        <Label text="CPF:" layoutX="14.0" layoutY="44.0" />
+        <TextField fx:id="txtfCpf" layoutX="100.0" layoutY="40.0" />
+
+        <Label text="Idade:" layoutX="14.0" layoutY="74.0" />
+        <TextField fx:id="txtfIdade" layoutX="100.0" layoutY="70.0" />
+
+        <Label text="Telefone:" layoutX="14.0" layoutY="104.0" />
+        <TextField fx:id="txtfTelefone" layoutX="100.0" layoutY="100.0" />
+
+        <Label text="Sexo:" layoutX="14.0" layoutY="134.0" />
+        <ChoiceBox fx:id="choiceSexo" layoutX="100.0" layoutY="130.0" />
+
+        <Label text="Função:" layoutX="14.0" layoutY="164.0" />
+        <ChoiceBox fx:id="choiceFuncao" layoutX="100.0" layoutY="160.0" />
+
+        <Button fx:id="btnIniciaEdicao" layoutX="14.0" layoutY="200.0" text="Iniciar Edição" onAction="#handleEditionButton"/>
+        <Button fx:id="btnEditar" layoutX="120.0" layoutY="200.0" text="Editar" onAction="#edit" disable="true"/>
+        <Button fx:id="btnVoltar" layoutX="180.0" layoutY="200.0" text="Voltar" onAction="#backwards"/>
+    </children>
+</Pane>

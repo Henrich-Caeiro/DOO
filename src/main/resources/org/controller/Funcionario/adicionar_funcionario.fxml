@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.controller.Funcionario.AdicionarFuncionarioController">
+    <children>
+        <TextField fx:id="txtNome" layoutX="106.0" layoutY="52.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="545.0" AnchorPane.topAnchor="52.0" />
+        <TextField fx:id="txtCPF" layoutX="106.0" layoutY="117.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="545.0" AnchorPane.topAnchor="117.0" />
+        <TextField fx:id="txtTelefone" layoutX="106.0" layoutY="178.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="545.0" AnchorPane.topAnchor="178.0" />
+        <Label layoutX="40.0" layoutY="56.0" text="Nome" AnchorPane.leftAnchor="40.0" />
+        <Label layoutX="47.0" layoutY="121.0" text="CPF" AnchorPane.leftAnchor="47.0" />
+        <Label layoutX="34.0" layoutY="182.0" text="Telefone" AnchorPane.leftAnchor="34.0" />
+        <ChoiceBox fx:id="choiceGender" layoutX="435.0" layoutY="52.0" prefHeight="25.0" prefWidth="113.0" AnchorPane.rightAnchor="259.1982421875" AnchorPane.topAnchor="52.0" />
+        <Label layoutX="373.0" layoutY="56.0" text="Sexo" AnchorPane.rightAnchor="408.0" AnchorPane.topAnchor="56.0" />
+        <ChoiceBox fx:id="choiceFuncao" layoutX="428.0" layoutY="182.0" prefHeight="25.0" prefWidth="113.0" AnchorPane.rightAnchor="259.0" AnchorPane.topAnchor="182.0" />
+        <Label layoutX="371.0" layoutY="186.0" text="Função" AnchorPane.rightAnchor="406.1982421875" AnchorPane.topAnchor="186.0" />
+        <TextField fx:id="txtIdade" layoutX="428.0" layoutY="117.0" prefHeight="25.0" prefWidth="113.0" AnchorPane.rightAnchor="259.0" AnchorPane.topAnchor="117.0" />
+        <Label layoutX="371.0" layoutY="121.0" text="Idade" AnchorPane.rightAnchor="406.1982421875" AnchorPane.topAnchor="121.0" />
+        <TextField fx:id="txtDiaTrabalho1" layoutX="106.0" layoutY="238.0" prefHeight="25.0" prefWidth="113.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="545.0" AnchorPane.topAnchor="238.0" />
+        <Label layoutX="40.0" layoutY="242.0" text="Dia de Trabalho 1" AnchorPane.leftAnchor="40.0" />
+        <TextField fx:id="txtDiaTrabalho2" layoutX="106.0" layoutY="298.0" prefHeight="25.0" prefWidth="113.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="545.0" AnchorPane.topAnchor="298.0" />
+        <Label layoutX="40.0" layoutY="302.0" text="Dia de Trabalho 2" AnchorPane.leftAnchor="40.0" />
+        <TextField fx:id="txtCargaTrabalho1" layoutX="428.0" layoutY="238.0" prefHeight="25.0" prefWidth="113.0" AnchorPane.rightAnchor="259.0" AnchorPane.topAnchor="238.0" />
+        <Label layoutX="371.0" layoutY="242.0" text="Carga de Trabalho 1" AnchorPane.rightAnchor="406.1982421875" AnchorPane.topAnchor="242.0" />
+        <TextField fx:id="txtCargaTrabalho2" layoutX="428.0" layoutY="298.0" prefHeight="25.0" prefWidth="113.0" AnchorPane.rightAnchor="259.0" AnchorPane.topAnchor="298.0" />
+        <Label layoutX="371.0" layoutY="302.0" text="Carga de Trabalho 2" AnchorPane.rightAnchor="406.1982421875" AnchorPane.topAnchor="302.0" />
+        <Button fx:id="btnCancel" layoutX="16.0" layoutY="561.0" mnemonicParsing="false" onAction="#cancel" text="Cancelar" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" />
+        <Button fx:id="btnCadastrar" layoutX="720.0" layoutY="561.0" mnemonicParsing="false" onAction="#register" text="Cadastrar" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+        <Text fx:id="txtMessage" layoutX="15.0" layoutY="362.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER" wrappingWidth="777.1982421875" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="343.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
